@@ -154,7 +154,24 @@ ul {
 .button-service:hover {
   background-color: var(--clr-button-on);
 }
+/* advantages */
+.advanteges-list {
+  width: 264px;
+  height: 112px;
+  background: var(--clr-background-dark);
+  border-radius: 4px;
+  margin-bottom: 8px;
 
+  fill: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-icon {
+  width: 64px;
+  height: 64px;
+}
 .secondary-conteiner {
   display: flex;
   gap: 24px;
@@ -292,6 +309,9 @@ ul {
 .footer-socials-link:hover {
   background: #31d0aa;
 }
+.footer-socials-link:focus {
+  background: #31d0aa;
+}
 .footer-socials-icon {
   width: 24px;
   height: 24px;
@@ -306,7 +326,7 @@ ul {
   justify-content: center;
   margin-bottom: 72px;
 }
-.but-all {
+.but-icon {
   padding: 12px 24px;
   letter-spacing: 0.04em;
   font-weight: 500;
@@ -318,7 +338,7 @@ ul {
   border-radius: 4px;
   font-family: "Roboto";
 }
-.but-all:hover {
+.but-icon:hover {
   letter-spacing: 0.04em;
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
 
@@ -331,123 +351,26 @@ ul {
   cursor: pointer;
   font-family: "Roboto";
 }
-.but-web {
-  padding: 12px 24px;
+.but-icon:focus {
   letter-spacing: 0.04em;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-button-off);
-  background: var(--clr-background-dark);
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  font-family: "Roboto";
-}
-.but-web:hover {
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.04em;
-  background: var(--clr-button-on);
-  color: var(--clr-primary-inverted);
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  cursor: pointer;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto";
-}
-.but-app {
-  padding: 12px 24px;
-  letter-spacing: 0.04em;
-  background: var(--clr-background-dark);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-button-off);
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  font-family: "Roboto";
-}
-.but-app:hover {
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.04em;
-  border: 1px solid var(--color-wiete-foo);
+
   border-radius: 4px;
   background: var(--clr-button-on);
   color: var(--clr-primary-inverted);
-  flex: none;
-  order: 2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   font-family: "Roboto";
 }
-.but-desing {
-  padding: 12px 24px;
-  letter-spacing: 0.04em;
-  color: var(--color-button-off);
-  background: var(--clr-background-dark);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  flex: none;
-  order: 3;
-  font-family: "Roboto";
-}
-.but-desing:hover {
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
-  background: var(--clr-button-on);
-  color: var(--clr-primary-inverted);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto";
-}
-.but-marketing {
-  padding: 12px 24px;
-  letter-spacing: 0.04em;
-  background: var(--clr-background-dark);
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  color: var(--color-button-off);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  order: 4;
-  font-family: "Roboto";
-}
-.but-marketing:hover {
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
-  letter-spacing: 0.04em;
-  border: 1px solid var(--color-wiete-foo);
-  border-radius: 4px;
-  background: var(--clr-button-on);
-  color: var(--clr-primary-inverted);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Roboto";
-}
+
 .border-text {
   border: 1px solid var(--color-wiete-foo);
   border-top: none;
   padding-left: 16px;
-  padding-bottom: 32px;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* text  */
 
@@ -458,13 +381,18 @@ ul {
   padding-bottom: 120px;
 }
 .name-info {
-  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  border: 1px solid var(--color-wiete-foo);
   flex-basis: calc((100% - 48px) / 3);
 }
 .name-info:hover {
-  cursor: pointer;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  border: 1px solid var(--clr-background-dark);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.portfolio-link {
+  text-decoration: none;
+}
+
 .foto-portfolio {
   display: block;
   max-width: 100%;
@@ -543,43 +471,7 @@ ul {
   color: var(--color-primary);
   order: 1;
 }
-/* advantages */
-.advantages-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
-.advantages {
-  width: 264px;
-  height: 112px;
-  background: var(--clr-background-dark);
-  border-radius: 4px;
-  padding-bottom: 8px;
-}
-.advantages-link {
-  width: 100%;
-  height: 100%;
-  fill: var(--color-primary-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.advantages-icon-antena {
-  width: 59.72px;
-  height: 64px;
-}
-.advantages-icon-clock {
-  width: 61.22px;
-  height: 64px;
-}
-.advantages-icon-diagram {
-  width: 64px;
-  height: 49.09px;
-}
-.advantages-icon-astronaut {
-  width: 50.13px;
-  height: 55.46px;
-}
+
 /* socials */
 .socials-lisst {
   display: flex;
@@ -632,7 +524,7 @@ ul {
 .customers-item {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--color-customers);
+
   border-radius: 4px;
 }
 .customers-link {
@@ -642,12 +534,16 @@ ul {
   align-items: center;
   justify-content: center;
   fill: var(--color-customers);
+  border: 1px solid var(--color-customers);
+  border-radius: 4px;
 }
-.customers-link:focus {
+.customers-link:hover {
+  fill: var(--clr-button-on);
   border: 1px solid var(--clr-button-on);
   border-radius: 4px;
 }
-.customers-item:hover {
+.customers-link:focus {
+  fill: var(--clr-button-on);
   border: 1px solid var(--clr-button-on);
   border-radius: 4px;
 }
@@ -655,8 +551,4 @@ ul {
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: var(--color-customers);
-}
-.customers-icon:hover {
-  fill: var(--clr-button-on);
 }
