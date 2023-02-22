@@ -368,9 +368,7 @@ ul {
 .border-text {
   border: 1px solid var(--color-wiete-foo);
   border-top: none;
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 /* text  */
 
@@ -384,13 +382,15 @@ ul {
   border: 1px solid var(--color-wiete-foo);
   flex-basis: calc((100% - 48px) / 3);
 }
-.name-info:hover {
-  border: 1px solid var(--clr-background-dark);
+
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.portfolio-link {
-  text-decoration: none;
 }
 
 .foto-portfolio {
@@ -503,23 +503,24 @@ ul {
   height: 16px;
 }
 /* customers */
+.customers-box {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .customers {
   text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
+
   letter-spacing: 0.02em;
   font-size: 36px;
-  line-height: 40px;
-  padding-top: 130px;
+  line-height: 1.1;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--color-primary-dark);
 }
 .customers-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 120px;
 }
 .customers-item {
   width: 168px;
